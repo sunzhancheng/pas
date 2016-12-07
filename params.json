@@ -1,6 +1,40 @@
-{
-  "name": "Pas",
-  "tagline": "WEIRUWRWB AO FUWJFW W Q",
-  "body": "### Welcome to GitHub Pages.\r\nThis automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here [using GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/), select a template crafted by a designer, and publish. After your page is generated, you can check out the new `gh-pages` branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.\r\n\r\n### Designer Templates\r\nWe’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.\r\n\r\n### Creating pages manually\r\nIf you prefer to not use the automatic generator, push a branch named `gh-pages` to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.\r\n\r\n### Authors and Contributors\r\nYou can @mention a GitHub username to generate a link to their profile. The resulting `<a>` element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (@defunkt), PJ Hyett (@pjhyett), and Tom Preston-Werner (@mojombo) founded GitHub.\r\n\r\n### Support or Contact\r\nHaving trouble with Pages? Check out our [documentation](https://help.github.com/pages) or [contact support](https://github.com/contact) and we’ll help you sort it out.\r\n",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<h1>总结</h1>
+		<h2>script编程规范</h2>
+		<p>1.编出来的代码要像同一个人编的</p>
+		<p>2.规范使用命名驼峰命名，并且要使用有意义的单词，变量命名尽量用 i;j;k;m;n.</p>
+		<h2>位运算符</h2>
+		<p>按位与(&)：&&运算符我们都知道，只有两个都为真，结果才为真。&道理是一样的，只有两个数的值为1时，才返回1</p>
+		<p>按位或(|)：|与||操作符的道理也是一样的，只要两个数中有一个数为1，结果就为1，其他则为0。</p>
+		<p>按位非(~)：按位非就是求二进制的反码</p>
+		<h2>基础回顾</h2>
+		<p>for循环的应用 举例：现需要一个5*5的格子内含数字从小到大依次排列</p>
+		<pre>
+			window.onload=function(){
+				var box=document.getElementById("box");
+				var str="";
+				for (var i = 0;i < 5;i++) {
+					for(var j = 0;j < 5;j++){
+						 var num=i*5+j-3;
+						if(num<=0){
+							num=""
+						}
+						str+=("<div>"+num+"</div>");
+					}		
+				}
+				
+				box.innerHTML=str
+			}
+			
+		</pre>
+		<p>函数的三种调用方式</p>
+		
+		
+	</body>
+</html>
